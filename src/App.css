@@ -1,42 +1,207 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.films {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  background-color: rgb(195, 212, 212);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.allfilms {
+  flex: 2;
+}
+
+.favoritWatchLaterFilm {
+  flex: 1;
+}
+
+.films {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 800px;
+
+}
+
+.filmdetail {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 900px;
+
+
+  margin-top: 100px;
+}
+
+.films h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.films h4 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.films p {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.films dt {
+  font-weight: bold;
+}
+
+.films dd {
+  margin-left: 20px;
+}
+
+.films .icon-button {
+  margin-top: 10px;
+}
+
+.favoritFilms {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 350px;
+}
+
+.checkbox-group .checkbox-item {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.comment {
+  border: 1px solid #ababab;
+  margin: 0px 0px 5px 0px;
+  font-size: smaller;
+  border-radius: 5px;
+
+  p {
+    padding: 0px 0px 0px 5px;
+  }
+
+  .dateComment {
+    color: rgb(123, 168, 144);
+    text-align: right;
+    padding: 0px 5px 0px 0px;
+  }
+}
+
+.sidebar {
+  width: 350px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 90px;
+  right: 0;
+  height: calc(100% - 90px);
+  overflow-y: auto;
+}
+
+
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 900px;
+  background-color: #f4f4f4;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: calc(100% - 90px);
+  overflow: auto;
+  z-index: 998;
+}
+
+.search {
+  position: sticky;
+  top: 0;
+  background-color: inherit;
+  z-index: 999;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.related_film {
+  background-color: #f7e4d3;
+
+  border-radius: 10px;
+  margin: 5px;
+
+  h3 {
+    text-align: center;
+    font-size: 22px;
+
+    color: darkred;
+  }
+
+  p {
+    font-size: 15px;
+    margin: 10px;
+  }
+}
+
+.CommentField {
+
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+
+
+}
+
+.commentButton {
+
+  text-align: right;
+  align-items: right;
+  left: 100px;
+  position: relative;
+  border-color: #ccc;
+  margin: 3px;
+
 }
